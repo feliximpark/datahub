@@ -1,0 +1,12 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+    <!-- Dashboard-Inhalt -->
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-8">
+            <h1>Willkommen zurück, {{ user.username }}!</h1>
+            <p>Dies ist dein persönliches Dashboard mit allen wichtigen Funktionen und Informationen.</p>
+            <!-- Weitere Inhalte für eingeloggte Benutzer -->
+        </div>
+    </div>
+{% endblock %}

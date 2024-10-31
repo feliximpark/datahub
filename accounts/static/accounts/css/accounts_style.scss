@@ -1,0 +1,37 @@
+
+/* Sidebar Styles */
+.sidebar {
+    height: 20%; /* Höhe der Sidebar auf 20% der Bildschirmhöhe gesetzt */
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 56px; /* Startet direkt unter der Navbar */
+    right: 0;
+    background-color: #fff; /* Hintergrundfarbe weiß */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+    border-left: 1px solid #d3d3d3; /* Dünne graue Linie als Außengrenze */
+}
+
+.sidebar a, .sidebar p, .sidebar button {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover, .sidebar button:hover {
+    color: #000;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #000;
+}

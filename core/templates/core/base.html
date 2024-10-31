@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>RND Datahub</title>
+    <title>{% block pagetitle %}RND Datahub - Startseite{% endblock %}</title>
     {% load static %}
     <!-- CSS-Import -->
+     <!-- CSS datahub -->
     <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'core/css/theme_style.css' %}">
     <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    <!-- CSS Accounts -->
+    <link rel="stylesheet" href="{% static 'accounts/css/accounts_style.css' %}">
+    <!-- CSS Core -->
+    <link rel="stylesheet" href="{% static 'core/css/core_style.css' %}">
     <!-- Favicon-Import -->
-    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon_rnd.ico' %}" />
+    <link rel="icon" type="image/x-icon" href="{% static 'images/rnd_logo.png' %}" />
 
 </head>
 
@@ -20,20 +25,33 @@
 <body>
     <div class="container">
 
-       {% block content %}
-
-       {% endblock %}
+        <!-- navbar -->
+        {% include "core/navbar.html" %}
         
+        <!-- Messages -->
+        {% include "core/messages.html" %}
+        </div>
+        
+        <!-- main content -->
+        {% block content %}
+
+        {% endblock %}
+        
+        <!-- footer -->
+        {% include "core/footer.html" %}
 
     </div>
-
-     
+  
     
 
 <!-- Javascript -->
+<!-- Dateien aus core -->
 <script src="{% static 'core/js/bootstrap.bundle.min.js' %}"></script>
 <script src="{% static 'core/js/theme_script.js' %}"></script>
 <script src="{% static 'core/js/script.js' %}"></script>
-
+<!-- Javscript accounts -->
+<script src="{% static 'accounts/js/accounts_sidebar.js' %}"></script>
+<!-- Javascript base -->
+<script src="{% static 'core/js/core_messages.js' %}"></script>
 </body>
 </html>

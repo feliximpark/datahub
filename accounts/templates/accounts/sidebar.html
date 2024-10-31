@@ -1,0 +1,15 @@
+<!-- Sidebar für die Nutzerverwaltung -->
+<div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
+    <div id="sidebar-content">
+        {% if user.is_authenticated %}
+            <p>Willkommen, {{ user.username }}!</p>
+            <a href="{% url 'logout' %}">Ausloggen</a>
+        {% else %}
+            <div class="d-flex gap-2">
+                <a class="btn btn-primary" href="{% url 'login' %}">Einloggen</a>
+                <a class="btn btn-secondary" href="{% url 'register' %}">Registrieren</a>
+            </div>
+        {% endif %}
+    </div>
+</div>
