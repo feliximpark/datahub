@@ -1,3 +1,15 @@
+// Google-Fonts einbauen
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Für kursiven Text */
+em, i {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: italic;
+}
+
+
 /* Message Container Styles */
 .message-container {
     transition: opacity 0.5s ease-out;

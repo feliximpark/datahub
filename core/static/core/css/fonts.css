@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('/static/fonts/PlusJakartaSans-Regular.woff2') format('woff2');
+    font-weight: 100 900; /* Deckt das Gewichtungsspektrum von 100 bis 900 ab */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('/static/fonts/PlusJakartaSans-Italic.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: italic;
+}
